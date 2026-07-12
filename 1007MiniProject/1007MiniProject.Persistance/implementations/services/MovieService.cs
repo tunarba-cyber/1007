@@ -9,16 +9,30 @@ using System.Threading.Tasks;
 
 namespace _1007MiniProject.Persistance.implementations.services
 {
-    public class MovieService
+    public class MovieService : IMovieService
     {
         private readonly IRepository<Genre> _genres;
         private readonly IRepository<Actor> _actors;
         private readonly IRepository<Movie> _movies;
         private readonly IRepository<MovieActor> _movieActors;
         private readonly IGenreService _genreservice;
-        private readonly IMovieService _movieservice;
         private readonly IActorService _actorService;
-        
+
+        public MovieService(
+            IRepository<Genre> genres,
+            IRepository<Actor> actors,
+            IRepository<Movie> movies,
+            IRepository<MovieActor> movieActors,
+            IGenreService genreservice,
+            IActorService actorService)
+        {
+            _genres = genres;
+            _actors = actors;
+            _movies = movies;
+            _movieActors = movieActors;
+            _genreservice = genreservice;
+            _actorService = actorService;
+        }
 
         public void CreateMovie()
         {
@@ -30,6 +44,8 @@ namespace _1007MiniProject.Persistance.implementations.services
 
             while (true)
             {
+                Console.Clear();
+                Console.WriteLine("--- Create Movie ---");
                 switch (step)
                 {
                     case 1:
@@ -127,6 +143,7 @@ namespace _1007MiniProject.Persistance.implementations.services
         }
         public void ShowAllMovies()
         {
+            Console.Clear();
             Console.WriteLine("--- All Movies ---");
             var movies = _movies.GetAll().Where(m => !m.IsDeleted).ToList();
 
@@ -144,7 +161,6 @@ namespace _1007MiniProject.Persistance.implementations.services
         }
         public void ShowMovieDetails()
         {
-            Console.WriteLine("--- Movie Details ---");
             ShowAllMovies();
 
             Console.Write("Enter movie ID: ");
@@ -174,6 +190,8 @@ namespace _1007MiniProject.Persistance.implementations.services
         {
             while (true)
             {
+                Console.Clear();
+                Console.WriteLine("--- Search Movie ---");
                 Console.Write("Enter title keyword (00 = menu): ");
                 string keyword = Console.ReadLine();
                 if (keyword == "00") return;
@@ -200,6 +218,7 @@ namespace _1007MiniProject.Persistance.implementations.services
         }
         public void MovieStatistics()
         {
+            Console.Clear();
             Console.WriteLine("--- Movie Statistics ---");
             var movies = _movies.GetAll().Where(m => !m.IsDeleted).ToList();
 
@@ -266,6 +285,8 @@ namespace _1007MiniProject.Persistance.implementations.services
         {
             while (true)
             {
+                Console.Clear();
+                Console.WriteLine("--- Restore Movie ---");
                 var deletedMovies = _movies.GetAll().Where(m => m.IsDeleted).ToList();
 
                 if (!deletedMovies.Any())
@@ -323,7 +344,7 @@ namespace _1007MiniProject.Persistance.implementations.services
                 switch (step)
                 {
                     case 1:
-                        _movieservice.ShowAllMovies();
+                        ShowAllMovies();
                         Console.Write("Enter movie ID (00 = menu): ");
                         string movieIdInput = Console.ReadLine();
                         if (movieIdInput == "00") return;
@@ -373,8 +394,7 @@ namespace _1007MiniProject.Persistance.implementations.services
         }
         public void ShowMovieActors()
         {
-            Console.WriteLine("--- Movie Actors ---");
-            _movieservice.ShowAllMovies();
+            ShowAllMovies();
 
             Console.Write("Enter movie ID: ");
             string movieIdInput = Console.ReadLine();

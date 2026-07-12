@@ -1,4 +1,5 @@
 ﻿using _1007MiniProject.Application.interfaces.repositories;
+using _1007MiniProject.Application.interfaces.services;
 using _1007MiniProject.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -8,10 +9,15 @@ using System.Threading.Tasks;
 
 namespace _1007MiniProject.Persistance.implementations.services
 {
-    public class ActorService
+    public class ActorService : IActorService
     {
 
         private readonly IRepository<Actor> _actors;
+
+        public ActorService(IRepository<Actor> actors)
+        {
+            _actors = actors;
+        }
 
         public void CreateActor()
         {
@@ -21,6 +27,8 @@ namespace _1007MiniProject.Persistance.implementations.services
 
             while (true)
             {
+                Console.Clear();
+                Console.WriteLine("--- Create Actor ---");
                 switch (step)
                 {
                     case 1:
@@ -99,6 +107,7 @@ namespace _1007MiniProject.Persistance.implementations.services
         }
         public void ShowAllActors()
         {
+            Console.Clear();
             Console.WriteLine("--- All Actors ---");
             var actors = _actors.GetAll();
 

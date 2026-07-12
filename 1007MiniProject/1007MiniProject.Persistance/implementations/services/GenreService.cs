@@ -1,4 +1,5 @@
 ﻿using _1007MiniProject.Application.interfaces.repositories;
+using _1007MiniProject.Application.interfaces.services;
 using _1007MiniProject.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -8,15 +9,21 @@ using System.Threading.Tasks;
 
 namespace _1007MiniProject.Persistance.implementations.services
 {
-    public class GenreService
+    public class GenreService : IGenreService
     {
         private readonly IRepository<Genre> _genres;
         private const int GenreNameMaxLength = 100;
+
+        public GenreService(IRepository<Genre> genres)
+        {
+            _genres = genres;
+        }
 
         public void CreateGenre()
         {
             while (true)
             {
+                Console.Clear();
                 Console.WriteLine("--- Create Genre ---");
                 Console.Write("Enter genre name (0 = back, 00 = menu): ");
                 string name = Console.ReadLine();
@@ -52,6 +59,7 @@ namespace _1007MiniProject.Persistance.implementations.services
         }
         public void ShowAllGenres()
         {
+            Console.Clear();
             Console.WriteLine("--- All Genres ---");
             var genres = _genres.GetAll();
 

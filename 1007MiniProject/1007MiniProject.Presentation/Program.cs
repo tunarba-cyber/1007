@@ -1,7 +1,4 @@
-﻿using _1007MiniProject.Application.interfaces.services;
-using _1007MiniProject.Persistance.implementations.services;
-using _1007MiniProject.Presentation.Helper;
-using Microsoft.Extensions.DependencyInjection;
+﻿using _1007MiniProject.Presentation.Helper;
 
 namespace _1007MiniProject.Presentation
 {
@@ -9,7 +6,8 @@ namespace _1007MiniProject.Presentation
     {
         static void Main(string[] args)
         {
-            
+            var app = new ManagementApplication();
+            app.Run();
         }
     }
 }

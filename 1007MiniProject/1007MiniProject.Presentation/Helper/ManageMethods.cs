@@ -12,12 +12,13 @@ namespace _1007MiniProject.Presentation.Helper
         private readonly IGenreService _genreservice;
         private readonly IMovieService _movieservice;
         private readonly IActorService _actorService;
-        private readonly IMovieService _movieActorService;
+        private readonly IMovieActorService _movieActorService;  // was IMovieService
+
         public ManageMethods(
             IGenreService genreservice,
             IMovieService movieservice,
             IActorService actorService,
-            IMovieService movieActorService)
+            IMovieActorService movieActorService)
         {
             _genreservice = genreservice;
             _movieservice = movieservice;

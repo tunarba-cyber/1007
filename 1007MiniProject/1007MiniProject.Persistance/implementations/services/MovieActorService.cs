@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _1007MiniProject.Persistance.implementations.services
 {
-    public class MovieActorService 
+    public class MovieActorService : IMovieActorService
     {
 
         private readonly IRepository<Actor> _actors;
@@ -17,6 +17,20 @@ namespace _1007MiniProject.Persistance.implementations.services
         private readonly IRepository<MovieActor> _movieActors;
         private readonly IMovieService _movieservice;
         private readonly IActorService _actorService;
+
+        public MovieActorService(
+            IRepository<Actor> actors,
+            IRepository<Movie> movies,
+            IRepository<MovieActor> movieActors,
+            IMovieService movieservice,
+            IActorService actorService)
+        {
+            _actors = actors;
+            _movies = movies;
+            _movieActors = movieActors;
+            _movieservice = movieservice;
+            _actorService = actorService;
+        }
 
         public void AssignActorToMovie()
         {
@@ -78,7 +92,6 @@ namespace _1007MiniProject.Persistance.implementations.services
         }
         public void ShowMovieActors()
         {
-            Console.WriteLine("--- Movie Actors ---");
             _movieservice.ShowAllMovies();
 
             Console.Write("Enter movie ID: ");
