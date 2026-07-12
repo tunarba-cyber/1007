@@ -1,0 +1,534 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{209C69A3-B920-16C1-3A9F-8F3F3943141C}|1007MiniProject.Presentation\\1007MiniProject.Presentation.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.presentation\\helper\\managementapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209C69A3-B920-16C1-3A9F-8F3F3943141C}|1007MiniProject.Presentation\\1007MiniProject.Presentation.csproj|solutionrelative:1007miniproject.presentation\\helper\\managementapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209C69A3-B920-16C1-3A9F-8F3F3943141C}|1007MiniProject.Presentation\\1007MiniProject.Presentation.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209C69A3-B920-16C1-3A9F-8F3F3943141C}|1007MiniProject.Presentation\\1007MiniProject.Presentation.csproj|solutionrelative:1007miniproject.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209C69A3-B920-16C1-3A9F-8F3F3943141C}|1007MiniProject.Presentation\\1007MiniProject.Presentation.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.presentation\\helper\\managemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209C69A3-B920-16C1-3A9F-8F3F3943141C}|1007MiniProject.Presentation\\1007MiniProject.Presentation.csproj|solutionrelative:1007miniproject.presentation\\helper\\managemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.application\\interfaces\\services\\iactorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|solutionrelative:1007miniproject.application\\interfaces\\services\\iactorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\implementations\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\implementations\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\implementations\\services\\movieactorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\implementations\\services\\movieactorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\implementations\\services\\actorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\implementations\\services\\actorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\implementations\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\implementations\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.application\\interfaces\\services\\igenreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|solutionrelative:1007miniproject.application\\interfaces\\services\\igenreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.application\\interfaces\\services\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|solutionrelative:1007miniproject.application\\interfaces\\services\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\implementations\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\implementations\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.application\\interfaces\\services\\imovieactorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|solutionrelative:1007miniproject.application\\interfaces\\services\\imovieactorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.core\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|solutionrelative:1007miniproject.core\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.core\\entities\\movieactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|solutionrelative:1007miniproject.core\\entities\\movieactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.core\\entities\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|solutionrelative:1007miniproject.core\\entities\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.core\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|solutionrelative:1007miniproject.core\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\configs\\actorconfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\configs\\actorconfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\configs\\genreconfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\configs\\genreconfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260711200658_AddConfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1007MiniProject.Persistance\\contexts\\migrations\\20260711200658_AddConfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\contexts\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\contexts\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260711174807_ConfigsAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1007MiniProject.Persistance\\contexts\\migrations\\20260711174807_ConfigsAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\configs\\movieactorconfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\configs\\movieactorconfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\configs\\movieconfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\configs\\movieconfigs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\contexts\\migrations\\20260710170926_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\contexts\\migrations\\20260710170926_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260711174323_ConfigurationsAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1007MiniProject.Persistance\\contexts\\migrations\\20260711174323_ConfigurationsAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\contexts\\migrations\\20260710170821_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\1007miniproject.persistance.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\1007miniproject.persistance.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.application\\1007miniproject.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|solutionrelative:1007miniproject.application\\1007miniproject.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.application\\interfaces\\repositories\\irepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA364FC3-6659-4C12-1321-41A0097263D8}|1007MiniProject.Application\\1007MiniProject.Application.csproj|solutionrelative:1007miniproject.application\\interfaces\\repositories\\irepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.core\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2004DC79-DCF0-6805-31E3-1BE2CEBFCB3F}|1007MiniProject.Core\\1007MiniProject.Domain.csproj|solutionrelative:1007miniproject.core\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|c:\\users\\pc\\source\\repos\\1007miniproject\\1007miniproject.persistance\\contexts\\migrations\\20260712140000_addedconfigsandchanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A87553A5-9B80-3C01-0382-6A131B4C47CA}|1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj|solutionrelative:1007miniproject.persistance\\contexts\\migrations\\20260712140000_addedconfigsandchanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManagementApplication.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Presentation\\Helper\\ManagementApplication.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Presentation\\Helper\\ManagementApplication.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Presentation\\Helper\\ManagementApplication.cs",
+              "RelativeToolTip": "1007MiniProject.Presentation\\Helper\\ManagementApplication.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T19:30:11.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ActorService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\services\\ActorService.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\implementations\\services\\ActorService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\services\\ActorService.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\implementations\\services\\ActorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T20:39:21.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GenreService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\services\\GenreService.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\implementations\\services\\GenreService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\services\\GenreService.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\implementations\\services\\GenreService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T20:39:39.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IMovieService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\services\\IMovieService.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Application\\interfaces\\services\\IMovieService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\services\\IMovieService.cs",
+              "RelativeToolTip": "1007MiniProject.Application\\interfaces\\services\\IMovieService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:26:49.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IGenreService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\services\\IGenreService.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Application\\interfaces\\services\\IGenreService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\services\\IGenreService.cs",
+              "RelativeToolTip": "1007MiniProject.Application\\interfaces\\services\\IGenreService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:27:10.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Presentation\\Program.cs",
+              "RelativeToolTip": "1007MiniProject.Presentation\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T15:42:41.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageMethods.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Presentation\\Helper\\ManageMethods.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Presentation\\Helper\\ManageMethods.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Presentation\\Helper\\ManageMethods.cs",
+              "RelativeToolTip": "1007MiniProject.Presentation\\Helper\\ManageMethods.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T14:01:08.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IActorService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\services\\IActorService.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Application\\interfaces\\services\\IActorService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\services\\IActorService.cs",
+              "RelativeToolTip": "1007MiniProject.Application\\interfaces\\services\\IActorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:24:50.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MovieActorService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\services\\MovieActorService.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\implementations\\services\\MovieActorService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\services\\MovieActorService.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\implementations\\services\\MovieActorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T20:40:04.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovieService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\services\\MovieService.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\implementations\\services\\MovieService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\services\\MovieService.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\implementations\\services\\MovieService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswJEBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T20:39:52.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\implementations\\repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\implementations\\repositories\\Repository.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\implementations\\repositories\\Repository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAcwDQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T20:12:25.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IMovieActorService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\services\\IMovieActorService.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Application\\interfaces\\services\\IMovieActorService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\services\\IMovieActorService.cs",
+              "RelativeToolTip": "1007MiniProject.Application\\interfaces\\services\\IMovieActorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:26:24.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20260712140000_AddedConfigsAndChanges.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260712140000_AddedConfigsAndChanges.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\contexts\\migrations\\20260712140000_AddedConfigsAndChanges.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260712140000_AddedConfigsAndChanges.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\contexts\\migrations\\20260712140000_AddedConfigsAndChanges.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T14:00:00.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MovieActor.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\MovieActor.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Core\\Entities\\MovieActor.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\MovieActor.cs",
+              "RelativeToolTip": "1007MiniProject.Core\\Entities\\MovieActor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:01:36.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\Movie.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Core\\Entities\\Movie.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\Movie.cs",
+              "RelativeToolTip": "1007MiniProject.Core\\Entities\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T15:59:37.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\AppDbContext.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\contexts\\AppDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:28:41.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Genre.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\Genre.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Core\\Entities\\Genre.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\Genre.cs",
+              "RelativeToolTip": "1007MiniProject.Core\\Entities\\Genre.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:00:35.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Actor.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\Actor.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Core\\Entities\\Actor.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\Actor.cs",
+              "RelativeToolTip": "1007MiniProject.Core\\Entities\\Actor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:00:48.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ActorConfigs.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\configs\\ActorConfigs.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\configs\\ActorConfigs.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\configs\\ActorConfigs.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\configs\\ActorConfigs.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T17:12:59.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20260711200658_AddConfigs.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260711200658_AddConfigs.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\contexts\\migrations\\20260711200658_AddConfigs.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260711200658_AddConfigs.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\contexts\\migrations\\20260711200658_AddConfigs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T20:06:58.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20260711174807_ConfigsAdded.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260711174807_ConfigsAdded.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\contexts\\migrations\\20260711174807_ConfigsAdded.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260711174807_ConfigsAdded.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\contexts\\migrations\\20260711174807_ConfigsAdded.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T17:48:07.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\contexts\\migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\contexts\\migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T17:43:55.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GenreConfigs.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\configs\\GenreConfigs.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\configs\\GenreConfigs.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\configs\\GenreConfigs.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\configs\\GenreConfigs.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T17:13:29.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20260710170926_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260710170926_Initial.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\contexts\\migrations\\20260710170926_Initial.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260710170926_Initial.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\contexts\\migrations\\20260710170926_Initial.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T17:09:27.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MovieActorConfigs.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\configs\\MovieActorConfigs.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\configs\\MovieActorConfigs.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\configs\\MovieActorConfigs.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\configs\\MovieActorConfigs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T17:14:07.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MovieConfigs.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\configs\\MovieConfigs.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\configs\\MovieConfigs.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\configs\\MovieConfigs.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\configs\\MovieConfigs.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T17:13:47.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20260711174323_ConfigurationsAdded.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260711174323_ConfigurationsAdded.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\contexts\\migrations\\20260711174323_ConfigurationsAdded.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\contexts\\migrations\\20260711174323_ConfigurationsAdded.cs",
+              "RelativeToolTip": "1007MiniProject.Persistance\\contexts\\migrations\\20260711174323_ConfigurationsAdded.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T17:43:23.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20260710170821_Initial.cs",
+              "DocumentMoniker": "C:\\contexts\\migrations\\20260710170821_Initial.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\contexts\\migrations\\20260710170821_Initial.cs",
+              "ToolTip": "C:\\contexts\\migrations\\20260710170821_Initial.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\contexts\\migrations\\20260710170821_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T17:08:21.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "1007MiniProject.Persistance.csproj",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj",
+              "RelativeDocumentMoniker": "1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj",
+              "RelativeToolTip": "1007MiniProject.Persistance\\1007MiniProject.Persistance.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-10T15:50:09.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "1007MiniProject.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\1007MiniProject.Application.csproj",
+              "RelativeDocumentMoniker": "1007MiniProject.Application\\1007MiniProject.Application.csproj",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\1007MiniProject.Application.csproj",
+              "RelativeToolTip": "1007MiniProject.Application\\1007MiniProject.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-10T16:24:53.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IRepositories.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\repositories\\IRepositories.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Application\\interfaces\\repositories\\IRepositories.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Application\\interfaces\\repositories\\IRepositories.cs",
+              "RelativeToolTip": "1007MiniProject.Application\\interfaces\\repositories\\IRepositories.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:18:17.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "1007MiniProject.Core\\Entities\\common\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\1007MiniProject\\1007MiniProject.Core\\Entities\\common\\BaseEntity.cs",
+              "RelativeToolTip": "1007MiniProject.Core\\Entities\\common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:00:17.456Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

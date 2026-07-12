@@ -1,0 +1,15 @@
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\bin\Debug\net8.0\1007MiniProject.Domain.deps.json
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\bin\Debug\net8.0\1007MiniProject.Domain.runtimeconfig.json
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\bin\Debug\net8.0\1007MiniProject.Domain.dll
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\bin\Debug\net8.0\1007MiniProject.Domain.pdb
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\1007MiniProject.Domain.csproj.AssemblyReference.cache
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\1007MiniProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\1007MiniProject.Domain.AssemblyInfoInputs.cache
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\1007MiniProject.Domain.AssemblyInfo.cs
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\1007MiniProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\1007MiniProject.Domain.sourcelink.json
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\1007MiniProject.Domain.dll
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\refint\1007MiniProject.Domain.dll
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\1007MiniProject.Domain.pdb
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\1007MiniProject.Domain.genruntimeconfig.cache
+C:\Users\Pc\source\repos\1007MiniProject\1007MiniProject.Core\obj\Debug\net8.0\ref\1007MiniProject.Domain.dll

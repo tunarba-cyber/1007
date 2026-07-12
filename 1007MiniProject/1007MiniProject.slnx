@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/presentation/">
+    <Project Path="1007MiniProject.Presentation/1007MiniProject.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/core/">
+    <Project Path="1007MiniProject.Application/1007MiniProject.Application.csproj" />
+    <Project Path="1007MiniProject.Core/1007MiniProject.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/infrastructure/">
+    <Project Path="1007MiniProject.Persistance/1007MiniProject.Persistance.csproj" />
+  </Folder>
+</Solution>
