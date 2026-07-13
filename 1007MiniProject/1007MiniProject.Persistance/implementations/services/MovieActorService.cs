@@ -1,6 +1,7 @@
 ﻿using _1007MiniProject.Application.interfaces.repositories;
 using _1007MiniProject.Application.interfaces.services;
 using _1007MiniProject.Core.Entities;
+using _1007MiniProject.Persistance.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,6 @@ namespace _1007MiniProject.Persistance.implementations.services
 {
     public class MovieActorService : IMovieActorService
     {
-
         private readonly IRepository<Actor> _actors;
         private readonly IRepository<Movie> _movies;
         private readonly IRepository<MovieActor> _movieActors;
@@ -42,45 +42,46 @@ namespace _1007MiniProject.Persistance.implementations.services
                 switch (step)
                 {
                     case 1:
-                        _movieservice.ShowAllMovies();
+                        _movieservice.ShowAllMoviesInline();
                         Console.Write("Enter movie ID (00 = menu): ");
                         string movieIdInput = Console.ReadLine();
                         if (movieIdInput == "00") return;
                         if (!int.TryParse(movieIdInput, out movieId) || _movies.GetById(movieId) == null)
                         {
-                            Console.WriteLine("Error: Invalid movie ID!");
+                            ServiceUI.Error("Invalid movie ID!");
                             continue;
                         }
                         step = 2;
                         continue;
 
                     case 2:
-                        _actorService.ShowAllActors();
+                        _actorService.ShowAllActorsInline();
                         Console.Write("Enter actor ID (0 = back, 00 = menu): ");
                         string actorIdInput = Console.ReadLine();
                         if (actorIdInput == "00") return;
                         if (actorIdInput == "0") { step = 1; continue; }
                         if (!int.TryParse(actorIdInput, out actorId) || _actors.GetById(actorId) == null)
                         {
-                            Console.WriteLine("Error: Invalid actor ID!");
+                            ServiceUI.Error("Invalid actor ID!");
                             continue;
                         }
 
                         if (_movieActors.Any(ma => ma.MovieId == movieId && ma.ActorId == actorId))
                         {
-                            Console.WriteLine("Error: This actor is already assigned to this movie!");
+                            ServiceUI.Error("This actor is already assigned to this movie!");
                             continue;
                         }
 
                         try
                         {
+                            ServiceUI.Loading("Locking in the champion pick");
                             _movieActors.Add(new MovieActor { MovieId = movieId, ActorId = actorId });
                             _movieActors.SaveChanges();
-                            Console.WriteLine("Actor assigned to movie successfully.");
+                            ServiceUI.Success("Actor assigned to movie successfully.");
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine($"Error: {ex.Message}");
+                            ServiceUI.Error(ex.Message);
                         }
 
                         Console.Write("Press Enter to assign another, or 00 to return to menu: ");
@@ -90,24 +91,31 @@ namespace _1007MiniProject.Persistance.implementations.services
                 }
             }
         }
+
         public void ShowMovieActors()
         {
-            _movieservice.ShowAllMovies();
+            _movieservice.ShowAllMoviesInline();
 
             Console.Write("Enter movie ID: ");
             string movieIdInput = Console.ReadLine();
             if (!int.TryParse(movieIdInput, out int movieId))
             {
-                Console.WriteLine("Error: Invalid movie ID!");
+                ServiceUI.Error("Invalid movie ID!");
+                ServiceUI.Pause();
                 return;
             }
 
             var links = _movieActors.GetAll().Where(ma => ma.MovieId == movieId).ToList();
             if (!links.Any())
             {
-                Console.WriteLine("No actors assigned to this movie.");
+                ServiceUI.Empty("actors assigned to this movie");
+                ServiceUI.Pause();
                 return;
             }
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("──── ROSTER ────");
+            Console.ResetColor();
 
             foreach (var link in links)
             {
@@ -117,6 +125,8 @@ namespace _1007MiniProject.Persistance.implementations.services
                     Console.WriteLine($"{actor.Id} - {actor.Name} {actor.Surname}");
                 }
             }
+
+            ServiceUI.Pause();
         }
     }
 }

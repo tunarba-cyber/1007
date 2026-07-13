@@ -1,6 +1,7 @@
 ﻿using _1007MiniProject.Application.interfaces.repositories;
 using _1007MiniProject.Application.interfaces.services;
 using _1007MiniProject.Core.Entities;
+using _1007MiniProject.Persistance.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace _1007MiniProject.Persistance.implementations.services
         private readonly IRepository<MovieActor> _movieActors;
         private readonly IGenreService _genreservice;
         private readonly IActorService _actorService;
+        private const int MovieTitleMaxLength = 200;
 
         public MovieService(
             IRepository<Genre> genres,
@@ -44,8 +46,7 @@ namespace _1007MiniProject.Persistance.implementations.services
 
             while (true)
             {
-                Console.Clear();
-                Console.WriteLine("--- Create Movie ---");
+                ServiceUI.Header("Create Movie — New Game Recap");
                 switch (step)
                 {
                     case 1:
@@ -54,7 +55,17 @@ namespace _1007MiniProject.Persistance.implementations.services
                         if (titleInput == "00") return;
                         if (string.IsNullOrWhiteSpace(titleInput))
                         {
-                            Console.WriteLine("Error: Title cannot be empty!");
+                            ServiceUI.Error("Title cannot be empty!");
+                            continue;
+                        }
+                        if (titleInput.Length > MovieTitleMaxLength)
+                        {
+                            ServiceUI.Error($"Title cannot exceed {MovieTitleMaxLength} characters!");
+                            continue;
+                        }
+                        if (_movies.Any(m => m.Title == titleInput))
+                        {
+                            ServiceUI.Error("A movie with this title already exists!");
                             continue;
                         }
                         title = titleInput;
@@ -68,7 +79,7 @@ namespace _1007MiniProject.Persistance.implementations.services
                         if (releaseInput == "0") { step = 1; continue; }
                         if (!DateTime.TryParse(releaseInput, out releaseYear))
                         {
-                            Console.WriteLine("Error: Invalid release year!");
+                            ServiceUI.Error("Invalid release year!");
                             continue;
                         }
                         step = 3;
@@ -81,7 +92,7 @@ namespace _1007MiniProject.Persistance.implementations.services
                         if (durationInput == "0") { step = 2; continue; }
                         if (!decimal.TryParse(durationInput, out duration) || duration <= 0)
                         {
-                            Console.WriteLine("Error: Invalid duration!");
+                            ServiceUI.Error("Invalid duration!");
                             continue;
                         }
                         step = 4;
@@ -94,21 +105,21 @@ namespace _1007MiniProject.Persistance.implementations.services
                         if (budgetInput == "0") { step = 3; continue; }
                         if (!decimal.TryParse(budgetInput, out budget) || budget < 0)
                         {
-                            Console.WriteLine("Error: Invalid budget!");
+                            ServiceUI.Error("Invalid budget!");
                             continue;
                         }
                         step = 5;
                         continue;
 
                     case 5:
-                        _genreservice.ShowAllGenres();
+                        PrintAllGenresInline();
                         Console.Write("Enter genre ID (0 = back, 00 = menu): ");
                         string genreIdInput = Console.ReadLine();
                         if (genreIdInput == "00") return;
                         if (genreIdInput == "0") { step = 4; continue; }
                         if (!int.TryParse(genreIdInput, out genreId) || _genres.GetById(genreId) == null)
                         {
-                            Console.WriteLine("Error: Invalid genre ID!");
+                            ServiceUI.Error("Invalid genre ID!");
                             continue;
                         }
                         step = 6;
@@ -125,13 +136,14 @@ namespace _1007MiniProject.Persistance.implementations.services
                         };
                         try
                         {
+                            ServiceUI.Loading("Drafting the movie into the roster");
                             _movies.Add(movie);
                             _movies.SaveChanges();
-                            Console.WriteLine("Movie created successfully.");
+                            ServiceUI.Success("Movie created successfully.");
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine($"Error: {ex.Message}");
+                            ServiceUI.Error(ex.Message);
                         }
 
                         Console.Write("Press Enter to create another, or 00 to return to menu: ");
@@ -141,15 +153,29 @@ namespace _1007MiniProject.Persistance.implementations.services
                 }
             }
         }
-        public void ShowAllMovies()
+
+        private void PrintAllGenresInline()
         {
-            Console.Clear();
-            Console.WriteLine("--- All Movies ---");
+            var genres = _genres.GetAll();
+            if (!genres.Any())
+            {
+                Console.WriteLine("(No genres exist yet — create one first!)");
+                return;
+            }
+            foreach (var genre in genres)
+            {
+                Console.WriteLine($"{genre.Id} - {genre.Name}");
+            }
+        }
+
+        private void PrintAllMovies()
+        {
+            ServiceUI.Header("All Movies — Match History");
             var movies = _movies.GetAll().Where(m => !m.IsDeleted).ToList();
 
             if (!movies.Any())
             {
-                Console.WriteLine("No movies found.");
+                ServiceUI.Empty("movies");
                 return;
             }
 
@@ -159,55 +185,77 @@ namespace _1007MiniProject.Persistance.implementations.services
                 Console.WriteLine($"{movie.Id} - {movie.Title} ({movie.ReleaseYear:yyyy}) - Genre: {genre?.Name ?? "Unknown"}");
             }
         }
+
+        public void ShowAllMovies()
+        {
+            ServiceUI.Loading("Pulling up the match history");
+            PrintAllMovies();
+            ServiceUI.Pause();
+        }
+
+        public void ShowAllMoviesInline()
+        {
+            PrintAllMovies();
+        }
+
         public void ShowMovieDetails()
         {
-            ShowAllMovies();
+            PrintAllMovies();
 
             Console.Write("Enter movie ID: ");
             string idInput = Console.ReadLine();
             if (!int.TryParse(idInput, out int movieId))
             {
-                Console.WriteLine("Error: Invalid movie ID!");
+                ServiceUI.Error("Invalid movie ID!");
+                ServiceUI.Pause();
                 return;
             }
 
             var movie = _movies.GetById(movieId);
             if (movie == null || movie.IsDeleted)
             {
-                Console.WriteLine("Error: Movie not found!");
+                ServiceUI.Error("Movie not found!");
+                ServiceUI.Pause();
                 return;
             }
 
             var genre = _genres.GetById(movie.GenreId);
 
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("──── MATCH DETAILS ────");
+            Console.ResetColor();
             Console.WriteLine($"Title: {movie.Title}");
             Console.WriteLine($"Release Year: {movie.ReleaseYear:yyyy}");
             Console.WriteLine($"Duration: {movie.Duration} minutes");
             Console.WriteLine($"Budget: {movie.Budget:C}");
             Console.WriteLine($"Genre: {genre?.Name ?? "Unknown"}");
+
+            ServiceUI.Pause();
         }
+
         public void SearchMovie()
         {
             while (true)
             {
-                Console.Clear();
-                Console.WriteLine("--- Search Movie ---");
+                ServiceUI.Header("Search Movie — Scoreboard Lookup");
                 Console.Write("Enter title keyword (00 = menu): ");
                 string keyword = Console.ReadLine();
                 if (keyword == "00") return;
 
                 if (string.IsNullOrWhiteSpace(keyword))
                 {
-                    Console.WriteLine("Error: Search keyword cannot be empty!");
+                    ServiceUI.Error("Search keyword cannot be empty!");
                     continue;
                 }
 
+                ServiceUI.Loading("Searching the Rift archives");
                 var results = _movies.GetAll()
                     .Where(m => !m.IsDeleted && m.Title.Contains(keyword, StringComparison.OrdinalIgnoreCase))
                     .ToList();
 
                 if (!results.Any())
-                    Console.WriteLine("No movies found matching your search.");
+                    ServiceUI.Empty("movies matching your search");
                 else
                     foreach (var movie in results)
                         Console.WriteLine($"{movie.Id} - {movie.Title} ({movie.ReleaseYear:yyyy})");
@@ -216,15 +264,17 @@ namespace _1007MiniProject.Persistance.implementations.services
                 if (Console.ReadLine() == "00") return;
             }
         }
+
         public void MovieStatistics()
         {
-            Console.Clear();
-            Console.WriteLine("--- Movie Statistics ---");
+            ServiceUI.Header("Movie Statistics — Post-Game Analysis");
+            ServiceUI.Loading("Crunching the post-game numbers");
             var movies = _movies.GetAll().Where(m => !m.IsDeleted).ToList();
 
             if (!movies.Any())
             {
-                Console.WriteLine("No movies found.");
+                ServiceUI.Empty("movies");
+                ServiceUI.Pause();
                 return;
             }
 
@@ -241,26 +291,29 @@ namespace _1007MiniProject.Persistance.implementations.services
                 var genre = _genres.GetById(group.Key);
                 Console.WriteLine($"- {genre?.Name ?? "Unknown"}: {group.Count()}");
             }
+
+            ServiceUI.Pause();
         }
+
         public void DeleteMovie()
         {
             while (true)
             {
-                ShowAllMovies();
+                PrintAllMovies();
                 Console.Write("Enter movie ID to delete (00 = menu): ");
                 string idInput = Console.ReadLine();
                 if (idInput == "00") return;
 
                 if (!int.TryParse(idInput, out int movieId))
                 {
-                    Console.WriteLine("Error: Invalid movie ID!");
+                    ServiceUI.Error("Invalid movie ID!");
                     continue;
                 }
 
                 var movie = _movies.GetById(movieId);
                 if (movie == null || movie.IsDeleted)
                 {
-                    Console.WriteLine("Error: Movie not found!");
+                    ServiceUI.Error("Movie not found!");
                     continue;
                 }
 
@@ -268,30 +321,31 @@ namespace _1007MiniProject.Persistance.implementations.services
 
                 try
                 {
+                    ServiceUI.Loading("Sending the movie back to the Shadow Isles");
                     _movies.Update(movie);
                     _movies.SaveChanges();
-                    Console.WriteLine("Movie deleted successfully.");
+                    ServiceUI.Success("Movie deleted successfully.");
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Error: {ex.Message}");
+                    ServiceUI.Error(ex.Message);
                 }
 
                 Console.Write("Press Enter to delete another, or 00 to return to menu: ");
                 if (Console.ReadLine() == "00") return;
             }
         }
+
         public void RestoreMovie()
         {
             while (true)
             {
-                Console.Clear();
-                Console.WriteLine("--- Restore Movie ---");
+                ServiceUI.Header("Restore Movie — Summoner's Return");
                 var deletedMovies = _movies.GetAll().Where(m => m.IsDeleted).ToList();
 
                 if (!deletedMovies.Any())
                 {
-                    Console.WriteLine("No deleted movies found.");
+                    ServiceUI.Empty("deleted movies");
                     Console.Write("Press Enter to check again, or 00 to return to menu: ");
                     if (Console.ReadLine() == "00") return;
                     continue;
@@ -306,14 +360,14 @@ namespace _1007MiniProject.Persistance.implementations.services
 
                 if (!int.TryParse(idInput, out int movieId))
                 {
-                    Console.WriteLine("Error: Invalid movie ID!");
+                    ServiceUI.Error("Invalid movie ID!");
                     continue;
                 }
 
                 var movie = deletedMovies.FirstOrDefault(m => m.Id == movieId);
                 if (movie == null)
                 {
-                    Console.WriteLine("Error: Movie not found in deleted list!");
+                    ServiceUI.Error("Movie not found in deleted list!");
                     continue;
                 }
 
@@ -321,19 +375,21 @@ namespace _1007MiniProject.Persistance.implementations.services
 
                 try
                 {
+                    ServiceUI.Loading("Reviving the movie at the Nexus");
                     _movies.Update(movie);
                     _movies.SaveChanges();
-                    Console.WriteLine("Movie restored successfully.");
+                    ServiceUI.Success("Movie restored successfully.");
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Error: {ex.Message}");
+                    ServiceUI.Error(ex.Message);
                 }
 
                 Console.Write("Press Enter to restore another, or 00 to return to menu: ");
                 if (Console.ReadLine() == "00") return;
             }
         }
+
         public void AssignActorToMovie()
         {
             int step = 1;
@@ -344,45 +400,46 @@ namespace _1007MiniProject.Persistance.implementations.services
                 switch (step)
                 {
                     case 1:
-                        ShowAllMovies();
+                        PrintAllMovies();
                         Console.Write("Enter movie ID (00 = menu): ");
                         string movieIdInput = Console.ReadLine();
                         if (movieIdInput == "00") return;
                         if (!int.TryParse(movieIdInput, out movieId) || _movies.GetById(movieId) == null)
                         {
-                            Console.WriteLine("Error: Invalid movie ID!");
+                            ServiceUI.Error("Invalid movie ID!");
                             continue;
                         }
                         step = 2;
                         continue;
 
                     case 2:
-                        _actorService.ShowAllActors();
+                        _actorService.ShowAllActorsInline();
                         Console.Write("Enter actor ID (0 = back, 00 = menu): ");
                         string actorIdInput = Console.ReadLine();
                         if (actorIdInput == "00") return;
                         if (actorIdInput == "0") { step = 1; continue; }
                         if (!int.TryParse(actorIdInput, out actorId) || _actors.GetById(actorId) == null)
                         {
-                            Console.WriteLine("Error: Invalid actor ID!");
+                            ServiceUI.Error("Invalid actor ID!");
                             continue;
                         }
 
                         if (_movieActors.Any(ma => ma.MovieId == movieId && ma.ActorId == actorId))
                         {
-                            Console.WriteLine("Error: This actor is already assigned to this movie!");
+                            ServiceUI.Error("This actor is already assigned to this movie!");
                             continue;
                         }
 
                         try
                         {
+                            ServiceUI.Loading("Locking in the champion pick");
                             _movieActors.Add(new MovieActor { MovieId = movieId, ActorId = actorId });
                             _movieActors.SaveChanges();
-                            Console.WriteLine("Actor assigned to movie successfully.");
+                            ServiceUI.Success("Actor assigned to movie successfully.");
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine($"Error: {ex.Message}");
+                            ServiceUI.Error(ex.Message);
                         }
 
                         Console.Write("Press Enter to assign another, or 00 to return to menu: ");
@@ -392,22 +449,25 @@ namespace _1007MiniProject.Persistance.implementations.services
                 }
             }
         }
+
         public void ShowMovieActors()
         {
-            ShowAllMovies();
+            PrintAllMovies();
 
             Console.Write("Enter movie ID: ");
             string movieIdInput = Console.ReadLine();
             if (!int.TryParse(movieIdInput, out int movieId))
             {
-                Console.WriteLine("Error: Invalid movie ID!");
+                ServiceUI.Error("Invalid movie ID!");
+                ServiceUI.Pause();
                 return;
             }
 
             var links = _movieActors.GetAll().Where(ma => ma.MovieId == movieId).ToList();
             if (!links.Any())
             {
-                Console.WriteLine("No actors assigned to this movie.");
+                ServiceUI.Empty("actors assigned to this movie");
+                ServiceUI.Pause();
                 return;
             }
 
@@ -419,6 +479,8 @@ namespace _1007MiniProject.Persistance.implementations.services
                     Console.WriteLine($"{actor.Id} - {actor.Name} {actor.Surname}");
                 }
             }
+
+            ServiceUI.Pause();
         }
     }
 }

@@ -10,5 +10,6 @@ namespace _1007MiniProject.Application.interfaces.services
     {
         void CreateActor();
         void ShowAllActors();
+        void ShowAllActorsInline();
     }
 }

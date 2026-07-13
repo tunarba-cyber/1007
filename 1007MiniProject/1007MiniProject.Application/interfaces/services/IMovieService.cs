@@ -10,6 +10,7 @@ namespace _1007MiniProject.Application.interfaces.services
     {
         void CreateMovie();
         void ShowAllMovies();
+        void ShowAllMoviesInline();
         void ShowMovieDetails();
         void SearchMovie();
         void DeleteMovie();

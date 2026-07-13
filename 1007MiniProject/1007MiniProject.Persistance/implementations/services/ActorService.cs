@@ -1,18 +1,20 @@
 ﻿using _1007MiniProject.Application.interfaces.repositories;
 using _1007MiniProject.Application.interfaces.services;
 using _1007MiniProject.Core.Entities;
+using _1007MiniProject.Persistance.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace _1007MiniProject.Persistance.implementations.services
 {
     public class ActorService : IActorService
     {
-
         private readonly IRepository<Actor> _actors;
+        private static readonly Regex LettersOnlyRegex = new Regex(@"^[A-Za-z]+$");
 
         public ActorService(IRepository<Actor> actors)
         {
@@ -27,8 +29,7 @@ namespace _1007MiniProject.Persistance.implementations.services
 
             while (true)
             {
-                Console.Clear();
-                Console.WriteLine("--- Create Actor ---");
+                ServiceUI.Header("Create Actor — Summoner Registration");
                 switch (step)
                 {
                     case 1:
@@ -37,7 +38,12 @@ namespace _1007MiniProject.Persistance.implementations.services
                         if (nameInput == "00") return;
                         if (string.IsNullOrWhiteSpace(nameInput))
                         {
-                            Console.WriteLine("Error: Name cannot be empty!");
+                            ServiceUI.Error("Name cannot be empty!");
+                            continue;
+                        }
+                        if (!LettersOnlyRegex.IsMatch(nameInput))
+                        {
+                            ServiceUI.Error("Name can only contain letters (no numbers, spaces, or symbols)!");
                             continue;
                         }
                         name = nameInput;
@@ -51,7 +57,12 @@ namespace _1007MiniProject.Persistance.implementations.services
                         if (surnameInput == "0") { step = 1; continue; }
                         if (string.IsNullOrWhiteSpace(surnameInput))
                         {
-                            Console.WriteLine("Error: Surname cannot be empty!");
+                            ServiceUI.Error("Surname cannot be empty!");
+                            continue;
+                        }
+                        if (!LettersOnlyRegex.IsMatch(surnameInput))
+                        {
+                            ServiceUI.Error("Surname can only contain letters (no numbers, spaces, or symbols)!");
                             continue;
                         }
                         surname = surnameInput;
@@ -65,7 +76,12 @@ namespace _1007MiniProject.Persistance.implementations.services
                         if (birthInput == "0") { step = 2; continue; }
                         if (!DateTime.TryParse(birthInput, out birthDate))
                         {
-                            Console.WriteLine("Error: Invalid birth date!");
+                            ServiceUI.Error("Invalid birth date!");
+                            continue;
+                        }
+                        if (birthDate > DateTime.Today)
+                        {
+                            ServiceUI.Error("Birth date cannot be in the future!");
                             continue;
                         }
                         step = 4;
@@ -78,7 +94,12 @@ namespace _1007MiniProject.Persistance.implementations.services
                         if (countryInput == "0") { step = 3; continue; }
                         if (string.IsNullOrWhiteSpace(countryInput))
                         {
-                            Console.WriteLine("Error: Country cannot be empty!");
+                            ServiceUI.Error("Country cannot be empty!");
+                            continue;
+                        }
+                        if (!LettersOnlyRegex.IsMatch(countryInput))
+                        {
+                            ServiceUI.Error("Country can only contain letters (no numbers, spaces, or symbols)!");
                             continue;
                         }
                         country = countryInput;
@@ -89,13 +110,14 @@ namespace _1007MiniProject.Persistance.implementations.services
                         var actor = new Actor { Name = name, Surname = surname, BirthDate = birthDate, Country = country };
                         try
                         {
+                            ServiceUI.Loading("Registering summoner with the League");
                             _actors.Add(actor);
                             _actors.SaveChanges();
-                            Console.WriteLine("Actor created successfully.");
+                            ServiceUI.Success("Actor created successfully.");
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine($"Error: {ex.Message}");
+                            ServiceUI.Error(ex.Message);
                         }
 
                         Console.Write("Press Enter to create another, or 00 to return to menu: ");
@@ -105,23 +127,36 @@ namespace _1007MiniProject.Persistance.implementations.services
                 }
             }
         }
+
         public void ShowAllActors()
         {
-            Console.Clear();
-            Console.WriteLine("--- All Actors ---");
+            ServiceUI.Header("All Actors — Summoner Leaderboard");
+            ServiceUI.Loading("Pulling match history for all summoners");
+            PrintActors();
+            ServiceUI.Pause();
+        }
+
+        public void ShowAllActorsInline()
+        {
+            ServiceUI.Header("All Actors — Summoner Leaderboard");
+            PrintActors();
+        }
+
+        private void PrintActors()
+        {
             var actors = _actors.GetAll();
 
             if (!actors.Any())
             {
-                Console.WriteLine("No actors found.");
-                return;
+                ServiceUI.Empty("actors");
             }
-
-            foreach (var actor in actors)
+            else
             {
-                Console.WriteLine($"{actor.Id} - {actor.Name} {actor.Surname} ({actor.Country}, born {actor.BirthDate:yyyy-MM-dd})");
+                foreach (var actor in actors)
+                {
+                    Console.WriteLine($"{actor.Id} - {actor.Name} {actor.Surname} ({actor.Country}, born {actor.BirthDate:yyyy-MM-dd})");
+                }
             }
         }
-
     }
 }
